@@ -20,6 +20,17 @@ document.addEventListener("DOMContentLoaded", function () { // Wartet darauf, da
         }
     });
 
+       function handleCellClick(cell) {
+        cell.style.transform = 'scale(0.95)'; // Zelle kleiner machen
+        cell.style.backgroundColor = '#494949'; // Hintergrundfarbe ändern
+
+        // Füge eine Verzögerung hinzu, um die Animation zu sehen
+        setTimeout(function() {
+            cell.style.transform = ''; // Setze die Transformation zurück
+        }, 200);
+    }
+    
+    
     function handleCellClick(event) { // Behandelt Zellenklick-Ereignisse
         const cell = event.target; // Holt sich die angeklickte Zelle
         const index = cell.dataset.index; // Holt sich den Datensatz-Index der Zelle
