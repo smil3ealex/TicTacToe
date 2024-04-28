@@ -1,0 +1,119 @@
+body {
+    font-family:sans-serif, Arial, Helvetica;
+    font-size: 25px;
+    background-color: #212121;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-variant-position: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+#container {
+    text-align: center;
+    width: 586px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 173px);
+    gap: 17px;
+    background-color: #333333;
+    padding: 17px;
+    border-radius: 17px;
+    box-shadow: 0 0 33px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 167px;
+    height: 167px;
+    border: 3px solid #ffffff;
+    text-align: center;
+    font-size: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    line-height: 167px;
+    font-family: sans-serif, Arial, Helvetica;
+    border-radius: 3px;
+}
+
+.cell:hover {
+    background-color: #494949;
+}
+
+.cell::selection {
+    background-color: transparent;
+}
+
+.cell:active {
+    transform: scale(0.95);
+}
+
+.chroma {
+    background-color: #222222;
+}
+
+.replay-button {
+    width: 173px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.replay-button:hover{
+    background-color: #494949;
+}
+
+@keyframes rainbow {
+    0% {color: red;}
+    5% {color: orange;}
+    10% {color: yellow;}  
+    15% {color: chartreuse;}
+    20% {color: green;}   
+    25% {color: springgreen;}
+    30% {color: cyan;}
+    35% {color: azure;} 
+    40% {color: blue;}
+    45% {color: violet;}
+    50% {color: magenta;}
+    55% {color: magenta;}
+    60% {color: violet;}
+    65% {color: blue;}
+    70% {color: azure;} 
+    75% {color: cyan;}
+    80% {color: springgreen;}
+    85% {color: green;}   
+    90% {color: chartreuse;}
+    95% {color: yellow;}  
+    100% {color: orange;}
+}
+
+.message {
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: rainbow 10s infinite;
+
+
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
