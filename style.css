@@ -55,15 +55,15 @@ h1 {
     transform: scale(0.95);
 }
 
-
+/* Füge spezifische Regeln für Touch-Geräte hinzu */
 @media (hover: none) and (pointer: coarse) {
     .cell:active {
-        transform: scale(1); 
+        transform: scale(1); /* Setze die Skalierung zurück */
     }
 }
 
 .cell:active {
-    background-color: #494949; 
+    background-color: #494949; /* Ändere die Farbe nach Bedarf */
 }
 
 
