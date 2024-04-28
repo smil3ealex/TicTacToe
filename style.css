@@ -1,5 +1,5 @@
 body {
-    font-family:sans-serif, Arial, Helvetica;
+    font-family: sans-serif, Arial, Helvetica;
     font-size: 25px;
     background-color: #212121;
     color: #FFFFFF;
@@ -9,7 +9,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-variant-position: inherit;
 }
 
 h1 {
@@ -51,6 +50,10 @@ h1 {
     background-color: #494949;
 }
 
+.cell:focus {
+    background-color: #333333;
+}
+
 .cell:active {
     transform: scale(0.95);
 }
@@ -60,15 +63,6 @@ h1 {
     .cell:active {
         transform: scale(1); /* Setze die Skalierung zurück */
     }
-}
-
-.cell:active {
-    background-color: #494949; /* Ändere die Farbe nach Bedarf */
-}
-
-
-.chroma {
-    background-color: #222222;
 }
 
 .replay-button {
@@ -115,14 +109,14 @@ h1 {
     font-size: 30px;
     margin-bottom: 20px;
     animation: rainbow 10s infinite;
-
-
 }
 
 #button-container {
     display: flex;
     justify-content: center;
     height: 50px;
+}
+
 }
 
 
