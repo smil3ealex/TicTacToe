@@ -114,5 +114,6 @@ h1 {
 #button-container {
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 70px;
+    width:100px;
 }
